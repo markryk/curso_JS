@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+    <section>
+        <div class="mb-3 row">
+            <label for="txtNum" class="col-sm-2 p-2">Número</label>
+            <div class="col-sm-6">
+                <input class="form-control col-sm-6" type="number" name="txtNum" id="txtNum">
+            </div>
+            <input class="col-sm-3 btn btn-dark" type="button" value="GERAR" onclick="gerar()">
+        </div>
+        <div class="row">
+            <div class="p-3 col-sm-2" id="result">
+                <p>Soma</p>
+                <textarea class="form-control" name="t1" id="tabSoma" rows="12"></textarea>
+            </div>
+            <div class="p-3 col-sm-2" id="result">
+                <p>Subtração</p>
+                <textarea class="form-control" name="t2" id="tabSubtr" rows="12"></textarea>
+            </div>
+            <div class="p-3 col-sm-2" id="result">
+                <p>Multiplicação</p>
+                <textarea class="form-control" name="t3" id="tabMult" rows="12"></textarea>
+            </div>
+            <div class="p-3 col-sm-3" id="result">
+                <p>Divisão (real)</p>
+                <textarea class="form-control" name="t4" id="tabDivReal" rows="12"></textarea>
+            </div>
+            <div class="p-3 col-sm-3" id="result">
+                <p>Divisão (inteira)</p>
+                <textarea class="form-control" name="t5" id="tabDivInt" rows="12"></textarea>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="p-4">
+            &copy; CursoEmVideo
+            <br>
+            Aluno: <a href="https://github.com/markryk" target="_blank" style="font-family: 'Teko';">Mark Ryk</a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

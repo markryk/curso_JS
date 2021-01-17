@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Contador</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+    <section>
+        <div>
+            <div class="mb-3 row">
+                <label for="txtIni" class="col-sm-3">Início</label>
+                <div class="col-sm-9">
+                    <input class="form-control col-sm-9" type="number" name="inicio" id="txtIni">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="txtFim" class="col-sm-3">Fim</label>
+                <div class="col-sm-9">
+                    <input class="form-control col-sm-9" type="number" name="fim" id="txtFim">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="txtPasso" class="col-sm-3">Passo</label>
+                <div class="col-sm-9">
+                    <input class="form-control col-sm-9" type="number" name="passo" id="txtPasso">
+                </div>
+            </div>
+            <input class="btn btn-dark m-2" type="button" value="CONTAR" onclick="contar()">
+        </div>
+        <div id="msg" class="p-4"></div>
+        <div id="result" class="p-2">
+            Preparando a contagem...
+        </div>
+    </section>
+    <footer>
+        <p class="p-4">
+            &copy; CursoEmVideo
+            <br>
+            Aluno: <a href="https://github.com/markryk" target="_blank">Mark Ryk</a>
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
